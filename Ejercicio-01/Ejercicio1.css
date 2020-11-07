@@ -1,0 +1,27 @@
+/*Ejercicio1.css */
+/*Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo*/
+body {
+    background-color: white;
+    color: black;
+}
+h1{
+    text-align:center;
+    color:black;
+    font-weight:bold;
+}
+h2{
+    text-align:center;
+    color:green;
+}
+h3{
+    text-align:center;
+    color:blue;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+p {
+    color: #3f3e3e;
+    text-align: center;
+}
