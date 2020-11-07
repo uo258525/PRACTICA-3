@@ -1,5 +1,5 @@
 //Parrafos.js
-//Version 1.0. 04/11/2020.Elena D�az Guti�rrez. Universidad de Oviedo
+//Version 1.0. 04/11/2020.Elena Daz Gutiérrez. Universidad de Oviedo
 document.write("<p>Informe de la asignatura: ");
 document.write(asignatura.nombre);
 document.write("</p>");
