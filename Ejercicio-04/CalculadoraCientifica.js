@@ -103,6 +103,40 @@ class CalculadoraCientifica extends CalculadoraBasica{
                this.updatePantalla("error");
            }
     }
+
+    coseno(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);            
+            this.updatePantalla(""+ Math.cos(resultado));
+           }
+           else{
+               this.updatePantalla("error");
+           }
+    }
+
+    
+    tan(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);            
+            this.updatePantalla(""+ Math.tan(resultado));
+           }
+           else{
+               this.updatePantalla("error");
+           }
+    }
+    
+    factorial(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);            
+            this.updatePantalla(""+ Math._factorial(resultado));
+           }
+           else{
+               this.updatePantalla("error");
+           }
+    }
+    _factorial(n){
+
+    }
 }
 
 
