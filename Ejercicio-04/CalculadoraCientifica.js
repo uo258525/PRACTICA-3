@@ -76,16 +76,15 @@ class CalculadoraBasica{
     igual(){
         if(this.regex.test(this.pantalla)){
             var resultado=eval(this.pantalla);
-            this.pantalla=""+resultado;
-            this.updatePantalla();
+            this.updatePantalla(""+resultado);
            }
            else{
-               this.pantalla="error";
-               this.updatePantalla();
+               this.updatePantalla("error");
            }
     }
-    updatePantalla(){
-
+  
+    updatePantalla(valor){
+        this.pantalla=valor;
         document.getElementById("pantalla").value=this.pantalla;
 
     }
@@ -93,7 +92,21 @@ class CalculadoraBasica{
   
 
 }
-var calculadora=new CalculadoraBasica();
+
+class CalculadoraCientifica extends CalculadoraBasica{
+    seno(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);            
+            this.updatePantalla(""+ Math.sin(resultado));
+           }
+           else{
+               this.updatePantalla("error");
+           }
+    }
+}
+
+
+var calculadora=new CalculadoraCientifica();
 document.getElementById("c").onclick = () => calculadora.borrar();
 document.getElementById("div").onclick = () => calculadora.division();
 document.getElementById("mul").onclick = () => calculadora.multiplicacion();
