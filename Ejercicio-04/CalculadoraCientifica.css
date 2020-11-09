@@ -1,27 +1,24 @@
+
 body {
-    background-color: rgb(201, 157, 76);
+    background-color: rgb(255, 255, 255);
 }
 
-.calculator {
-    font-size: 28px;
+.calculadora {
+    font-size: 24px;
     margin: 0 auto;
-    height: 15.5em;
-    width: 10em;
+    height: 24em;
+    width: 19em;
     padding: 0.5em;
-    background-color: rgb(100, 100, 109);
+    background-color: rgb(186, 186, 196);
     border-radius: 12px;
 }
 
 .pantalla {
     border: 0;
-    border-radius: 5px;
-    background: rgb(164, 167, 189);
-    float: left;
+    background-color: rgb(186, 186, 196);
     text-align: right;
-    text-overflow: ellipsis;
-    overflow: hidden;
     font-size: 28px;
-    width: 9.6em;
+    width: 15.9em;
     line-height: 2em;
     margin: 0.2em;
     margin-bottom: 0.6em;
@@ -33,19 +30,23 @@ button {
     background: rgb(129, 174, 177);
     color: #1d2f36;
     cursor: pointer;
-    float: left;
     font: inherit;
     margin: 0.25em;
-    width: 2em;
+    width: 3em;
     height: 2em;
 }
 button:hover {
-    background: rgb(154, 215, 219);
+    background: rgb(207, 204, 204);
 }
 
-.red {
-    background:rgb(180, 40, 40);
+.op {
+    background: rgb(226, 221, 221);
 }
-.red:hover {
-    background: rgb(202, 84, 84);
+
+.reg{
+    background: rgb(226, 221, 221);
+}
+.numb,.coma{
+    background: rgb(255, 255, 255);
+    font-weight: bold;
 }

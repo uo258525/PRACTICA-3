@@ -94,23 +94,3 @@ class CalculadoraBasica{
 
 }
 var calculadora=new CalculadoraBasica();
-document.getElementById("c").onclick = () => calculadora.borrar();
-document.getElementById("div").onclick = () => calculadora.division();
-document.getElementById("mul").onclick = () => calculadora.multiplicacion();
-document.getElementById("minus").onclick = () => calculadora.resta();
-document.getElementById("add").onclick = () => calculadora.suma();
-document.getElementById("mrc").onclick = () => calculadora.mrc();
-document.getElementById("mMenos").onclick = () => calculadora.mMenos();
-document.getElementById("mMas").onclick = () => calculadora.mMas();
-document.getElementById("equals").onclick = () => calculadora.igual();
-document.getElementById("0").onclick = () => calculadora.digitos(0);
-document.getElementById("1").onclick = () => calculadora.digitos(1);
-document.getElementById("2").onclick = () => calculadora.digitos(2);
-document.getElementById("3").onclick = () => calculadora.digitos(3);
-document.getElementById("4").onclick = () => calculadora.digitos(4);
-document.getElementById("5").onclick = () => calculadora.digitos(5);
-document.getElementById("6").onclick = () => calculadora.digitos(6);
-document.getElementById("7").onclick = () => calculadora.digitos(7);
-document.getElementById("8").onclick = () => calculadora.digitos(8);
-document.getElementById("9").onclick = () => calculadora.digitos(9);
-document.getElementById("punto").onclick = () => calculadora.punto();

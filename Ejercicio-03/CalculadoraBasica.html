@@ -7,35 +7,36 @@
       <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
       <meta content="width=device-width,user-scalable=yes" name="viewport">
       <link href="CalculadoraBasica.css" rel="stylesheet">
-      <script src="Cabecera.js"></script>
 </head>
 
 <body>
       <!---Información de asignatura. Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo -->
       <h1>Calculadora Básica</h1>
-      <div class="calculator" id="calculator">
+      <main class="calculator" id="calculator">
       <input class="pantalla" id="pantalla" readonly/>
-      <button class="red" id="div">/</button>
-      <button class="red" id="mul">*</button>
-      <button class="red" id="minus">-</button>
-      <button class="red" id="add">+</button>
-      <button class="darkGrey" id="mrc">mrc</button>
-      <button class="darkGrey" id="mMenos">m-</button>
-      <button class="darkGrey" id="mMas">m+</button>
-      <button class="equals" id="equals">=</button>
-      <button class="numb" id="0">0</button>
-      <button class="numb" id="1">1</button>
-      <button class="numb" id="2">2</button>
-      <button class="numb" id="3">3</button>
-      <button class="numb" id="4">4</button>
-      <button class="numb" id="5">5</button>
-      <button class="numb" id="6">6</button>
-      <button class="numb" id="7">7</button>
-      <button class="numb" id="8">8</button>
-      <button class="numb" id="9">9</button>
-      <button class="punto" id="punto">.</button>
-      <button class="c" id="c">C</button>
-</div>
+      <button class="darkGrey" id="mrc" onclick=calculadora.mrc()>mrc</button>
+      <button class="darkGrey" id="mMenos" onclick=calculadora.mMenos()>m-</button>
+      <button class="darkGrey" id="mMas" onclick=calculadora.mMenos()>m+</button>
+      <button class="red" id="div"onclick=calculadora.division()>/</button>
+      <button class="numb" id="7" onclick=calculadora.digitos(7)>7</button>
+      <button class="numb" id="8" onclick=calculadora.digitos(8)>8</button>
+      <button class="numb" id="9" onclick=calculadora.digitos(9)>9</button>
+      <button class="red" id="mul" onclick=calculadora.multiplicacion()>*</button>
+      <button class="numb" id="4" onclick=calculadora.digitos(4)>4</button>
+      <button class="numb" id="5" onclick=calculadora.digitos(5)>5</button>
+      <button class="numb" id="6" onclick=calculadora.digitos(6)>6</button>
+      <button class="red" id="minus" onclick=calculadora.resta()>-</button>
+      <button class="numb" id="1" onclick=calculadora.digitos(1)>1</button>
+      <button class="numb" id="2" onclick=calculadora.digitos(2)>2</button>
+      <button class="numb" id="3" onclick=calculadora.digitos(3)>3</button>
+      <button class="red" id="add" onclick=calculadora.suma()>+</button>
+      <button class="numb" id="0" onclick=calculadora.digitos(0)>0</button>
+      <button class="punto" id="punto" onclick=calculadora.punto()>.</button>
+      <button class="c" id="c" onclick=calculadora.borrar()>C</button>
+      <button class="equals" id="equals" onclick=calculadora.igual()>=</button>
+      
+      
+      </main>
 <script src="CalculadoraBasica.js"></script>
 </body>
 </html>

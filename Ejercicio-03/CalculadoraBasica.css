@@ -1,51 +1,85 @@
+/*especificidad=1*/
 body {
     background-color: rgb(201, 157, 76);
 }
-
+/*especificidad=1*/
+h1{
+    text-align: center;
+}
+/*especificidad=10*/
 .calculator {
     font-size: 28px;
     margin: 0 auto;
     height: 15.5em;
     width: 10em;
     padding: 0.5em;
-    background-color: rgb(100, 100, 109);
+    background-color: rgb(86, 86, 92);
     border-radius: 12px;
 }
-
+/*especificidad=10*/
 .pantalla {
     border: 0;
     border-radius: 5px;
-    background: rgb(164, 167, 189);
+    background: rgb(121, 146, 121);
     float: left;
     text-align: right;
-    text-overflow: ellipsis;
-    overflow: hidden;
     font-size: 28px;
     width: 9.6em;
     line-height: 2em;
     margin: 0.2em;
     margin-bottom: 0.6em;
 }
-
+/*especificidad=1*/
 button {
     border: 0;
     border-radius: 5px;
     background: rgb(129, 174, 177);
     color: #1d2f36;
-    cursor: pointer;
     float: left;
     font: inherit;
     margin: 0.25em;
     width: 2em;
     height: 2em;
 }
+/*especificidad=11*/
 button:hover {
     background: rgb(154, 215, 219);
 }
-
+/*especificidad=10*/
 .red {
     background:rgb(180, 40, 40);
 }
+/*especificidad=20*/
 .red:hover {
     background: rgb(202, 84, 84);
+}
+/*especificidad=10*/
+.numb,.c,.punto,.equals{
+    background:rgb(143, 142, 142);
+    color:white;
+}
+/*especificidad=20*/
+.numb:hover{
+    background:rgb(214, 213, 213);
+}
+/*especificidad=20*/
+.c:hover{
+    background:rgb(214, 213, 213);
+}
+/*especificidad=20*/
+.punto:hover{
+    background:rgb(214, 213, 213);
+}
+/*especificidad=20*/
+.equals:hover{
+    background:rgb(214, 213, 213);
+}
+/*especificidad=10*/
+.darkGrey{
+    background:rgb(58, 58, 58) ;
+    color:white;
+}
+/*especificidad=20*/
+.darkGrey:hover{
+    background:rgb(98, 97, 97);
 }
