@@ -4,15 +4,22 @@ class CalculadoraBasica{
 
     constructor(){
         this.registro=0;
-        this.pantalla="";
+        this.pantalla="0";
         this.updatePantalla();
-        this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
+        this.regex = /^\-?[0-9]+(.[0-9]+)?((\+|\-|\**|\*|\/)\-?[0-9]+(.[0-9]+)?)*$/;
 
     }
 
     digitos(digito){
-        this.pantalla+=digito;
-        this.updatePantalla();
+        if(this.pantalla==="0"||this.pantalla==="error"){
+            this.pantalla=""+digito;
+            this.updatePantalla();
+        }
+        
+        else{
+            this.pantalla+=""+digito;
+            this.updatePantalla();
+        }
     }
     punto(){
         this.pantalla+=".";
@@ -64,147 +71,214 @@ class CalculadoraBasica{
             this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+               this.pantalla="error";
+               this.updatePantalla();
            }
 
     }
     borrar(){
-        this.updatePantalla("");
+        this.pantalla="";
+        this.updatePantalla();
     }
     igual(){
         if(this.regex.test(this.pantalla)){
             var resultado=eval(this.pantalla);
-            this.updatePantalla(""+resultado);
+            this.pantalla=""+resultado;
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+               this.pantalla="error";
+               this.updatePantalla();
            }
     }
-  
-    updatePantalla(valor){
-        this.pantalla=valor;
+    updatePantalla(){
+
         document.getElementById("pantalla").value=this.pantalla;
 
     }
+   
 
 }
 
 class CalculadoraCientifica extends CalculadoraBasica{
     potenciaDos(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.pow(2,resultado));
+            var resultado=eval(this.pantalla);  
+            this.pantalla=Math.pow(resultado,2);
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
 
     potencia(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla( "**");
+            var resultado=eval(this.pantalla);  
+            this.pantalla= resultado+"**"        
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
     seno(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.sin(resultado));
+            var resultado=eval(this.pantalla);
+            this.pantalla=Math.sin(resultado);            
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+               this.pantalla="error";
+               this.updatePantalla();
+           }
+    }
+    arcoseno(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);
+            this.pantalla=Math.asin(resultado);            
+            this.updatePantalla();
+           }
+           else{
+               this.pantalla="error";
+               this.updatePantalla();
            }
     }
 
     coseno(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.cos(resultado));
+            var resultado=eval(this.pantalla);  
+            this.pantalla=Math.cos(resultado);          
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
+           }
+    }
+    arcocoseno(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);
+            this.pantalla=Math.acos(resultado);            
+            this.updatePantalla();
+           }
+           else{
+               this.pantalla="error";
+               this.updatePantalla();
            }
     }
 
     
     tan(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.tan(resultado));
+            var resultado=eval(this.pantalla);   
+            this.pantalla=Math.tan(resultado);         
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
+           }
+    }
+    arcotan(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla);
+            this.pantalla=Math.atan(resultado);            
+            this.updatePantalla();
+           }
+           else{
+               this.pantalla="error";
+               this.updatePantalla();
            }
     }
     sqrt(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.sqrt(resultado));
+            var resultado=eval(this.pantalla);  
+            this.pantalla=Math.sqrt(resultado) ;     
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
     potenciaDiez(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.pow(10,resultado));
+            var resultado=eval(this.pantalla); 
+            this.pantalla=Math.pow(10,resultado);           
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
 
     log(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.log(resultado));
+            var resultado=eval(this.pantalla); 
+            this.pantalla= Math.log(resultado);        
+            this.updatePantalla( );
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
     exp(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math.exp(resultado));
+            var resultado=eval(this.pantalla);
+            this.pantalla= Math.exp(resultado)           
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
     mostrar(str){
-        this.updatePantalla(""+str);
+        this.pantalla+=str;
+        this.updatePantalla();
+    }
+
+    borrarFlecha(){
+        if(this.regex.test(this.pantalla)){
+            if(this.pantalla.length>=1){
+                this.pantalla=this.pantalla.substring(0,this.pantalla.length-1);
+            }
+        }
+        this.updatePantalla();
     }
     borrarCE(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);
-            if(resultado!=0){
+
                 if(resultado.length===1){
                     resultado=0;
                 }
                 else{
-                    resultado=rsultado.substring(0,resultado.length-1);
+                    resultado=resultado.substring(0,resultado.length-1);
                 } 
-            }            
+                  
            }
           this.updatePantalla(); 
 
     }
     mostrarPi(){
-        this.updatePantalla(""+Math.PI);
+        this.pantalla=Math.PI;
+        this.updatePantalla();
     }
     
     factorial(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ Math._factorial(resultado));
+            var resultado=eval(this.pantalla);       
+            this.pantalla=  this._factorial(resultado)   
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }
     }
     _factorial(n){
@@ -215,16 +289,37 @@ class CalculadoraCientifica extends CalculadoraBasica{
     }
     cambiarSigno(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla);            
-            this.updatePantalla(""+ -(resultado));
+            var resultado=eval(this.pantalla);   
+            this.pantalla=-(resultado);         
+            this.updatePantalla();
            }
            else{
-               this.updatePantalla("error");
+            this.pantalla="error";
+            this.updatePantalla();
            }  
     }
 
     coma(){
-        this.updatePantalla(",");
+        this.pantalla=",";
+        this.updatePantalla();
+    }
+
+    ms(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla); 
+             this.registro=resultado; 
+             document.getElementById('mC').removeAttribute('disabled');
+             document.getElementById('mr').removeAttribute('disabled');
+        }
+    }
+    mc(){
+        
+        this.registro=0;
+    }
+    mr(){
+        //muestra en pantalla
+        this.pantalla=""+this.registro;
+        this.updatePantalla();
     }
    
 }

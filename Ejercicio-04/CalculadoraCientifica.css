@@ -6,7 +6,7 @@ body {
 .calculadora {
     font-size: 24px;
     margin: 0 auto;
-    height: 24em;
+    height: 26em;
     width: 19em;
     padding: 0.5em;
     background-color: rgb(186, 186, 196);
@@ -29,12 +29,16 @@ button {
     border-radius: 5px;
     background: rgb(129, 174, 177);
     color: #1d2f36;
-    cursor: pointer;
     font: inherit;
     margin: 0.25em;
     width: 3em;
     height: 2em;
 }
+
+button:disabled {
+    background: rgb(100,100,100);
+}
+
 button:hover {
     background: rgb(207, 204, 204);
 }
