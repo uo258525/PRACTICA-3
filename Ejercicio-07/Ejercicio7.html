@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <title>Ejercicio 7</title>
+      <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
+      <meta content="width=device-width,user-scalable=yes" name="viewport">
+      <link href="Ejercicio7.css" rel="stylesheet">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+      <!---Información de asignatura. Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo -->
+     <section>
+      <h1>H1</h1>
+      <p id="ph1">Párrafo modificable de h1</p>
+      
+      <form>
+        <p>Introduzca texto para párrafo de h1:<input type="text" id="tph1"><button class="button" id="editarH1" onclick="ej7.editarParrafo('#ph1','#tph1')">Editar</button></p>
+        
+      </form>
+    </section>
+    <section>
+        <h2>H2</h2>
+        <p>Modificaciones h2
+        <button class="button" id="mostrarH2" onclick="ej7.mostrarElemento('h2')">Mostrar</button>
+        <button class="button" id="ocultarH2" onclick="ej7.ocultarElemento('h2')">Ocultar</button>
+        <button class="button" id="eliminarH2" onclick="ej7.eliminarElemento('h2')">Eliminar</button>
+    </p>
+    </section>
+    <section>
+        <h3>Tabla</h3>
+        <table>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+              </tr>
+              <tr id="f1">
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                    <button class="fila" id="fila1" onclick="ej7.eliminarElemento('#f1')">Eliminar</button>
+                </td>
+              </tr>
+              <tr id="f2">
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>
+                    <button class="fila" id="fila2" onclick="ej7.eliminarElemento('#f2')">Eliminar</button>
+                </td>
+              </tr>
+              <tr id="f3">
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>
+                    <button class="fila" id="fila3" onclick="ej7.eliminarElemento('#f3')">Eliminar</button>
+                </td>
+              </tr>
+        </table>
+        <button class="button" id="sumar" onclick="ej7.sumar()">Sumar filas y columnas</button>
+        <input type="text" id="sum">
+
+        <p>Modificaciones tabla
+        <button class="button" id="mostrarTabla" onclick="ej7.mostrarElemento('table')">Mostrar</button>
+        <button class="button" id="ocultarTabla" onclick="ej7.ocultarElemento('table')">Ocultar</button>
+        <button class="button" id="eliminarTabla" onclick="ej7.eliminarElemento('table')">Eliminar</button>
+    </p>
+    </section>
+    <section>
+        <h4>Recorrer documento </h4>
+        <button class="button" id="recorrer" onclick="ej7.recorrer()">Recorrer</button>
+        
+    </section>
+   
+<script src="Ejercicio7.js"></script>
+</body>
+<footer>
+    <section>
+    <button class="button" id="addFooter" onclick="ej7.addFooter()">Añadir footer</button> 
+</section>
+</footer>
+</html>
