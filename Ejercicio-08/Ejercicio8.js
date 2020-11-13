@@ -9,7 +9,7 @@ class Ejercicio8{
         url: "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad+ "&units=metric"+"&lang=es"+"&APPID="+"f499f85bbf4f894d24f3069097f23b78",
         method: 'GET',
         success: function(data){
-            verData(data);            
+            this.verData(data);            
         },
         error:function(){
             document.write("Ha ocurrido un error");    
@@ -18,8 +18,7 @@ class Ejercicio8{
 }
 
 verData(data){
-    document.write("<h2>Datos</h2>")
-    document.write("<p>Ciudad: " + data.name + "</p>");
+    document.getElementById("datos").write("<p>Ciudad: " + data.name + "</p>");
     document.write("<p>País: " + data.sys.country + "</p>");
     document.write("<p>Latitud: " + data.coord.lat + " grados</p>");
     document.write("<p>Longitud: " + data.coord.lon + " grados</p>");

@@ -22,3 +22,9 @@ p {
     color: #3f3e3e;
     text-align: center;
 }
+#inicio{
+    text-align:center;
+    color:black;
+    font-size: 2em;
+    font-weight:bold; 
+}
