@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <title>CalculadoraDietetica</title>
+      <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
+      <meta content="width=device-width,user-scalable=yes" name="viewport">
+      <link href="Ejercicio6.css" rel="stylesheet">
+</head>
+
+<body>
+      <!---Información de asignatura. Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo -->
+      
+     
+    <h1>Calculadora dietética</h1> 
+    <form id="form" class="form" onsubmit="calculadora.calculate(); return false;">
+        
+        
+        <!--<label id="labelGenre" for="selectGenre">Sexo</label>
+        <select id="selectGenre">
+            <option value="masc">Hombre</option>
+            <option value="fem">Mujer</option>
+        </select>
+        <label id="labelEdad" for="inputEdad">Edad:</label>
+        <input id="inputEdad" class="input" for="labelEdad" type="number" min="0" value="0"/>-->        
+        <label id="labelPeso" for="inputPeso">Peso (ej: 65.5 kg):</label>
+        <input id="inputPeso" class="input" for="labelPeso" type="number" min="0" step="0.1" value="60.0"/>
+        <label id="labelAlt" for="inputAlt">Altura (ej: 1.75 m):</label>
+        <input id="inputAlt" class="input" for="labelAlt" type="number" min="0" step="0.01" value="1.70"/>
+        <input type="submit" value="Calcular">
+    </form>
+
+    <section id="resultados">
+        <h2 id="tituloResultados"></h2>
+        <p id="textoResltados"></p>
+    </section>
+
+
+    <div id="calcDietetica">
+
+        <div id="left">
+        <h2>Calorías ingeridas</h2>
+
+        
+        <section>  
+            <h3>Cerdo(lomo)</h3>      
+                <button class="button" id="buttonCerdoAdd" onclick="calculadora.addCalories('cerdo',208)">+100g</button>
+                <button class="button" id="buttonCerdoRem" onclick="calculadora.removeCalories('cerdo',208)">-100g</button>
+                <input id="cerdo" class="input" readonly/>
+        </section>
+
+        
+        <section>  
+            <h3>Bacalao</h3>      
+            <button class="button" id="buttonBacalaoAdd" onclick="calculadora.addCalories('bacalao',74)">+100g</button>
+            <button class="button" id="buttonBacalaoRem" onclick="calculadora.removeCalories('bacalao',74)">-100g</button>
+            <input id="bacalao" class="input" readonly/>
+        </section>
+
+        
+        <section>   
+            <h3>Tortilla de patata</h3>     
+            <button class="button" id="buttonTortillaAdd" onclick="calculadora.addCalories('tortilla',194)">+100g</button>
+            <button class="button" id="buttonTortillaRem" onclick="calculadora.removeCalories('tortilla',194)">-100g</button>
+            <input id="tortilla" class="input" readonly/>
+        </section>
+
+        
+        <section> 
+            <h3>Manzana</h3>       
+            <button class="button" id="buttonManzanaAdd" onclick="calculadora.addCalories('manzana',52)">+100g</button>
+            <button class="button" id="buttonManzanaRem" onclick="calculadora.removeCalories('manzana',52)">-100g</button>
+            <input id="manzana" class="input" readonly/>
+        </section>
+
+        
+        <section> 
+            <h3>Kiwi</h3>       
+            <button class="button" id="buttonKiwiAdd" onclick="calculadora.addCalories('kiwi',51)">+100g</button>
+            <button class="button" id="buttonKiwiRem" onclick="calculadora.removeCalories('kiwi',51)">-100g</button>
+            <input id="kiwi" class="input" readonly/>
+        </section>
+
+        
+        <section> 
+            <h3>Plátano</h3>       
+            <button class="button" id="buttonPlatanoAdd" onclick="calculadora.addCalories('platano',90)">+100g</button>
+            <button class="button" id="buttonPlatanoRem" onclick="calculadora.removeCalories('platano',90)">-100g</button>
+            <input id="platano" class="input" readonly/>
+        </section>
+        </div>
+
+        <div id="right">
+        <h2>Calorias quemadas (por actividades físicas)</h2>
+
+        <section>   
+            <h3>Correr</h3>     
+            <button class="button" id="buttonCorrerAdd" onclick="calculadora.addActivity('correr',0.151)">+5min</button>
+            <button class="button" id="buttonCorrerRem" onclick="calculadora.removeActivity('correr',0.151)">-5min</button>
+            <input id="correr" class="input" readonly/>
+        </section>
+        <section>   
+            <h3>Caminar</h3>     
+            <button class="button" id="buttonCaminarAdd" onclick="calculadora.addActivity('caminar',0.063)">+5min</button>
+            <button class="button" id="buttonCaminarRem" onclick="calculadora.removeActivity('caminar',0,063)">-5min</button>
+            <input id="caminar" class="input" readonly/>
+        </section>
+        <section>   
+            <h3>Nadar</h3>     
+            <button class="button" id="buttonNadarAdd" onclick="calculadora.addActivity('nadar',0.156)">+5min</button>
+            <button class="button" id="buttonNadarRem" onclick="calculadora.removeActivity('nadar',0.156)">-5min</button>
+            <input id="nadar" class="input" readonly/>
+        </section>
+        <section>   
+            <h3>Andar en bici</h3>     
+            <button class="button" id="buttonBiciAdd" onclick="calculadora.addActivity('bici',0.100)">+5min</button>
+            <button class="button" id="buttonBiciRem" onclick="calculadora.removeActivity('bici',0.100)">-5min</button>
+            <input id="bici" class="input" readonly/>
+        </section>
+        <section>   
+            <h3>Bailar</h3>     
+            <button class="button" id="buttonBailarAdd" onclick="calculadora.addActivity('bailar',0.070)">+5min</button>
+            <button class="button" id="buttonBailarRem" onclick="calculadora.removeActivity('bailar',0.070)">-5min</button>
+            <input id="bailar" class="input" readonly/>
+        </section>
+        <section>   
+            <h3>Dormir</h3>     
+            <button class="button" id="buttonDormirAdd" onclick="calculadora.addActivity('dormir',0.018)">+5min</button>
+            <button class="button" id="buttonDormirRem" onclick="calculadora.removeActivity('dormir',0.018)">-5min</button>
+            <input id="dormir" class="input" readonly/>
+        </section>
+
+        </div>
+    </div>
+
+          
+     
+<script src="Ejercicio6.js"></script>
+</body>
+</html>

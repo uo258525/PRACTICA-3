@@ -1,0 +1,18 @@
+
+#calcDietetica {
+    background-color: hotpink;
+}
+#left, #right {
+    width: 45%;
+    background-color: chartreuse;
+    display: inline-block;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}
+h1{
+    text-align:center;
+}
