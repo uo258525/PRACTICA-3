@@ -10,8 +10,6 @@
 </head>
 
 <body>
-      <!---Información de asignatura. Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo -->
-      
       <main class="calculadora" id="calculadora">
       <h1>Calculadora RPN</h1>
       <h2>Pila:</h2>   
@@ -25,31 +23,25 @@
       <button class="op" id="log" onclick="calculadora.operador('log')">log</button>
 
       <button class="op" id="pow2" onclick="calculadora.operador('pow2')">x&#178;</button>
-      <button class="op" id="paren" onclick="calculadora.mostrarPantalla('(')">(</button>      
-      <button class="op" id="paren2" onclick="calculadora.mostrarPantalla(')')">)</button>
       <button class="op" id="c" onclick="calculadora.borrar()">C</button>
-      
-      
-
+      <button class="op" id="div" onclick="calculadora.operadorSimple('/')">/</button>
+      <button class="op" id="mul" onclick="calculadora.operadorSimple('*')">*</button>
+      <button class="op" id="add"  onclick="calculadora.operadorSimple('+')">+</button>
+      <button class="op" id="minus"  onclick="calculadora.operadorSimple('-')">-</button>
+      <div>
       <button class="numb" id="7" onclick="calculadora.mostrarPantalla('7')">7</button>
       <button class="numb" id="8" onclick="calculadora.mostrarPantalla('8')">8</button>
       <button class="numb" id="9" onclick="calculadora.mostrarPantalla('9')">9</button>
-      <button class="op" id="div" onclick="calculadora.operadorSimple('/')">/</button>
-      <button class="op" id="mul" onclick="calculadora.operadorSimple('*')">*</button>
-
       <button class="numb" id="4"  onclick="calculadora.mostrarPantalla('4')">4</button>
       <button class="numb" id="5"  onclick="calculadora.mostrarPantalla('5')">5</button>
       <button class="numb" id="6"  onclick="calculadora.mostrarPantalla('6')">6</button>
-      <button class="op" id="add"  onclick="calculadora.operadorSimple('+')">+</button>
-      <button class="op" id="minus"  onclick="calculadora.operadorSimple('-')">-</button>
-      
-
       <button class="numb" id="1" onclick="calculadora.mostrarPantalla('1') ">1</button>
       <button class="numb" id="2" onclick="calculadora.mostrarPantalla('2')">2</button>
       <button class="numb" id="3" onclick="calculadora.mostrarPantalla('3')">3</button> 
       
-
-      <button class="numb" id="0" onclick="calculadora.mostrarPantalla('0')">0</button>    
+      <button class="numb" id="0" onclick="calculadora.mostrarPantalla('0')">0</button> 
+</div>
+    
     <button class="coma" id="coma" onclick="calculadora.mostrarPantalla(',')">,</button>      
       <button class="op" id="enter" onclick="calculadora.enviarAPila()">Enter</button>
           

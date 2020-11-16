@@ -42,6 +42,8 @@ section{/*especificidad=1*/
 #datos{
     column-count: 4;
 }
+
+/*especificidad=100*/
 #recorrer{
     text-align: center;
 }

@@ -218,9 +218,15 @@ class CalculadoraCientifica extends CalculadoraBasica{
 
     log(){
         if(this.regex.test(this.pantalla)){
-            var resultado=eval(this.pantalla); 
-            this.pantalla= Math.log(resultado);        
-            this.updatePantalla( );
+            try {
+                var resultado=eval(this.pantalla); 
+                this.pantalla= Math.log(resultado);        
+                this.updatePantalla( );
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
            }
            else{
             this.pantalla="error";
