@@ -58,6 +58,7 @@ button:hover {
     background:rgb(143, 142, 142);
     color:white;
 }
+
 /*especificidad=20*/
 .numb:hover{
     background:rgb(214, 213, 213);

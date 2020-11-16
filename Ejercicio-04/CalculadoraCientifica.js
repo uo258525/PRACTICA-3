@@ -227,6 +227,17 @@ class CalculadoraCientifica extends CalculadoraBasica{
             this.updatePantalla();
            }
     }
+    logInv(){
+        if(this.regex.test(this.pantalla)){
+            var resultado=eval(this.pantalla); 
+            this.pantalla= Math.pow(10,resultado);        
+            this.updatePantalla( );
+           }
+           else{
+            this.pantalla="error";
+            this.updatePantalla();
+           }
+    }
     exp(){
         if(this.regex.test(this.pantalla)){
             var resultado=eval(this.pantalla);
@@ -251,20 +262,7 @@ class CalculadoraCientifica extends CalculadoraBasica{
         }
         this.updatePantalla();
     }
-    borrarCE(){
-        if(this.regex.test(this.pantalla)){
-
-                if(resultado.length===1){
-                    resultado=0;
-                }
-                else{
-                    resultado=resultado.substring(0,resultado.length-1);
-                } 
-                  
-           }
-          this.updatePantalla(); 
-
-    }
+  
     mostrarPi(){
         this.pantalla=Math.PI;
         this.updatePantalla();

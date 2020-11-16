@@ -102,7 +102,7 @@ class Ejericio6{
 
         // Mostrar en pantalla
         document.getElementById("tituloResultados").innerHTML = "Resultados";
-        document.getElementById("textoResltados").innerHTML = str;
+        document.getElementById("textoResultados").innerHTML = str;
     }
 
 }

@@ -1,15 +1,15 @@
 class Ejercicio7{
     constructor(){
-        
+/*
+        $(document).ready(function () {
+            $('#editarH1').click(() => this.editarParrafo('#ph1','#tph1'));
 
+        });
+*/
     }
 
     editarParrafo(id,field){
-        $(document).ready(function () {
-
-            $(id).text($(field).val());
-
-        });
+        $(id).text($(field).val());
     }
 
     mostrarElemento(elemento){
@@ -32,16 +32,31 @@ class Ejercicio7{
     }
     recorrer(){
         var file="";
+        
         $("*", document.body).each(function() {
             var etiquetaPadre = $(this).parent().get(0).tagName;
 
-            file+= "Elemento: "+this+"\n";
+            file+= "<pre>Elemento: "+this+"\n";
             file+="Tipo de elemento: "+ this.tagName+"\n";
             file+="Padre :"  + etiquetaPadre +"\n";
-            file+="\n";
+            file+="\n</pre>";
         });
-        alert(file);
+        document.getElementById("datos").innerHTML = file;
     }
+
+/*
+    sumarFilasYColumnas() {
+        var filas = $('tr');
+        for (let i = 0; i < filas.length; i++) {
+            var columnas = $('td', filas.get(i));
+            for (let j = 0; j < columnas.length; j++) {
+                var celda = columnas.get(j);
+                var valor = parseInt(celda.innerHTML);
+
+            }
+        }
+    }
+    */
 
     sumar(){
         var suma=0;
@@ -54,6 +69,13 @@ class Ejercicio7{
         }
 
         document.getElementById('sum').value=""+suma;
+    }
+
+    addFooter(){
+        var str="";
+        str+="Esto es un footer";
+        document.getElementById('footer').innerHTML=str; 
+        this.ocultarElemento(document.getElementById('addFooter'));
     }
 
 }

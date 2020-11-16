@@ -37,3 +37,11 @@ th /*especifidad= 1*/
 section{/*especificidad=1*/
     text-align: center;
 }
+
+/*especificidad=100*/
+#datos{
+    column-count: 4;
+}
+#recorrer{
+    text-align: center;
+}

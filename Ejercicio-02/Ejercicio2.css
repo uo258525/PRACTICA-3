@@ -22,6 +22,7 @@ p {
     color: #3f3e3e;
     text-align: center;
 }
+/*especificidad=100*/
 #inicio{
     text-align:center;
     color:black;

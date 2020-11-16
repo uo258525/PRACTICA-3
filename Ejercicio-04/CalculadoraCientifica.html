@@ -39,7 +39,7 @@
       <button class="op" id="mod" onclick="calculadora.mostrar('%')">Mod</button>
 
       <button class="op" id="arrow" onclick="calculadora.borrar()">&uarr;</button>
-      <button class="op" id="ce" onclick="calculadora.borrarCE()">CE</button>
+      <button class="op" id="fact" onclick="calculadora.factorial()">n!</button>
       <button class="op" id="c" onclick="calculadora.borrar()">C</button>
       <button class="op" id="del" onclick="calculadora.borrarFlecha()">&larr;</button>
       <button class="op" id="div" onclick="calculadora.division()">/</button>
@@ -50,22 +50,24 @@
       <button class="numb" id="9" onclick="calculadora.digitos(9)">9</button>
       <button class="op" id="mul" onclick="calculadora.multiplicacion()">*</button>
 
-      <button class="op" id="fact" onclick="calculadora.factorial()">n!</button>
+      <button class="op" id="paren" onclick="calculadora.mostrar('(')">(</button>      
+      
       <button class="numb" id="4"  onclick="calculadora.digitos(4)">4</button>
       <button class="numb" id="5"  onclick="calculadora.digitos(5)">5</button>
       <button class="numb" id="6"  onclick="calculadora.digitos(6)">6</button>
+      <button class="op" id="paren2" onclick="calculadora.mostrar(')')">)</button>
       <button class="op" id="minus"  onclick="calculadora.resta()">-</button>
 
-      <button class="op" id="changeSign" onclick="calculadora.cambiarSigno()">&#177;</button>
+      
       <button class="numb" id="1" onclick="calculadora.digitos(1) ">1</button>
       <button class="numb" id="2" onclick="calculadora.digitos(2)">2</button>
-      <button class="numb" id="3" onclick="calculadora.digitos(3)">3</button>      
+      <button class="numb" id="3" onclick="calculadora.digitos(3)">3</button>     
+      <button class="op" id="changeSign" onclick="calculadora.cambiarSigno()">&#177;</button> 
       <button class="op" id="add" onclick="calculadora.suma()">+</button>
       
       
       
-      <button class="op" id="paren" onclick="calculadora.mostrar('(')">(</button>      
-      <button class="op" id="paren2" onclick="calculadora.mostrar(')')">)</button>
+      
       <button class="numb" id="0" onclick="calculadora.digitos(0)">0</button>
       <button class="coma" id="coma" onclick="calculadora.coma()">,</button>
       <button class="op" id="equals" onclick="calculadora.igual()">=</button>

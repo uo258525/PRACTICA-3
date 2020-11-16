@@ -1,18 +1,22 @@
-
+/*especificidad=100*/
 #calcDietetica {
     background-color: hotpink;
 }
+/*especificidad=100*/
 #left, #right {
     width: 45%;
     background-color: chartreuse;
     display: inline-block;
 }
+/*especificidad=100*/
 #left {
     float: left;
 }
+/*especificidad=100*/
 #right {
     float: right;
 }
+/*especificidad=1*/
 h1{
     text-align:center;
 }

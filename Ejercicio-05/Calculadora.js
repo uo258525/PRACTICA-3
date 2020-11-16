@@ -1,4 +1,4 @@
-class Calculadora{
+class CalculadoraRPN{
     constructor(){
         this.stack=[];
     }
@@ -7,9 +7,9 @@ class Calculadora{
 
         var display = document.getElementById("pantalla");
         if (display.value === '0') {
-            display.value = digit;
+            display.value = num;
         } else {
-            display.value += digit;
+            display.value += num;
         }
 
     }
@@ -54,10 +54,10 @@ class Calculadora{
                     result = Math.tan(this.stack.pop());
                     break;
                 case 'pow2':
-                    result=Math.pow(resultado,2);
+                    result=Math.pow(this.stack.pop(),2);
                     break;
                 case 'log':
-                    result=Math.log(resultado);
+                    result=Math.log(this.stack.pop());
                     break;   
                 default:
                     result = 0;
