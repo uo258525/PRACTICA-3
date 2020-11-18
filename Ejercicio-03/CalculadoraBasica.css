@@ -3,6 +3,10 @@ body {
     background-color: rgb(201, 157, 76);
 }
 /*especificidad=1*/
+label{
+    color:white;
+}
+/*especificidad=1*/
 h1{
     text-align: center;
 }
@@ -10,7 +14,7 @@ h1{
 .calculator {
     font-size: 28px;
     margin: 0 auto;
-    height: 15.5em;
+    height: 16em;
     width: 10em;
     padding: 0.5em;
     background-color: rgb(86, 86, 92);
@@ -34,7 +38,7 @@ button {
     border: 0;
     border-radius: 5px;
     background: rgb(129, 174, 177);
-    color: #1d2f36;
+    color: black;
     float: left;
     font: inherit;
     margin: 0.25em;
@@ -47,7 +51,8 @@ button:hover {
 }
 /*especificidad=10*/
 .red {
-    background:rgb(180, 40, 40);
+    background:rgb(231, 95, 95);
+    font-weight: bold;
 }
 /*especificidad=20*/
 .red:hover {
@@ -70,6 +75,7 @@ button:hover {
 /*especificidad=20*/
 .punto:hover{
     background:rgb(214, 213, 213);
+    
 }
 /*especificidad=20*/
 .equals:hover{
