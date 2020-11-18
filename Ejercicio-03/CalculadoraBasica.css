@@ -2,10 +2,7 @@
 body {
     background-color: rgb(201, 157, 76);
 }
-/*especificidad=1*/
-label{
-    color:white;
-}
+
 /*especificidad=1*/
 h1{
     text-align: center;
