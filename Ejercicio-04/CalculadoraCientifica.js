@@ -174,9 +174,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     arcoseno() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.asin(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -186,9 +192,14 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     coseno() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.cos(resultado);
             this.updatePantalla();
+            } catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -197,9 +208,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     arcocoseno() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.acos(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -210,9 +227,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     tan() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.tan(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -221,9 +244,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     arcotan() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.atan(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -232,9 +261,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     sqrt() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.sqrt(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -243,9 +278,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     potenciaDiez() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.pow(10, resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -289,9 +330,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     exp() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = Math.exp(resultado)
             this.updatePantalla();
+            }
+             catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -319,9 +366,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     factorial() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = this._factorial(resultado)
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -336,9 +389,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
     }
     cambiarSigno() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.pantalla = -(resultado);
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
         else {
             this.pantalla = "error";
@@ -353,10 +412,16 @@ class CalculadoraCientifica extends CalculadoraBasica {
 
     ms() {
         if (this.regex.test(this.pantalla)) {
+            try{
             var resultado = eval(this.pantalla);
             this.registro = resultado;
             document.getElementById('mC').removeAttribute('disabled');
             document.getElementById('mr').removeAttribute('disabled');
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
         }
     }
     mc() {
