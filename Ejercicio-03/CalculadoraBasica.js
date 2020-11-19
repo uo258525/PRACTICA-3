@@ -44,10 +44,17 @@ class CalculadoraBasica{
     mMenos(){
         //guarda digito para restar
         if(this.regex.test(this.pantalla)){//evalua que lo que hay en la pantalla sea operacion matematica(boolean)
+         
+         try{
          var resultado=eval(this.pantalla);//ejecuta lo que hay en pantalla
          this.registro-=resultado;
          this.pantalla="";
          this.updatePantalla();
+         }
+         catch (e) {
+            this.pantalla = e.message;
+            this.updatePantalla();
+        }
         }
         else{
             this.pantalla="error";
@@ -58,10 +65,16 @@ class CalculadoraBasica{
     mMas(){
         //guarda digito para sumar
         if(this.regex.test(this.pantalla)){
+            try{
             var resultado=eval(this.pantalla);
             this.registro+=resultado;
             this.pantalla="";
             this.updatePantalla();
+            }
+            catch (e) {
+                this.pantalla = e.message;
+                this.updatePantalla();
+            }
            }
            else{
                this.pantalla="error";
@@ -75,10 +88,16 @@ class CalculadoraBasica{
     }
     igual(){
         if(this.regex.test(this.pantalla)){
+            try{
             var resultado=eval(this.pantalla);
             this.pantalla=""+resultado;
             this.updatePantalla();
            }
+           catch (e) {
+            this.pantalla = e.message;
+            this.updatePantalla();
+        }
+    }
            else{
                this.pantalla="error";
                this.updatePantalla();
