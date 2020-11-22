@@ -1,0 +1,10 @@
+/*especificidad=1*/
+main{
+    text-align: center;
+}
+
+/*especificidad=1*/
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}

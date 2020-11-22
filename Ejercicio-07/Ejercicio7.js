@@ -1,11 +1,6 @@
 class Ejercicio7{
     constructor(){
-/*
-        $(document).ready(function () {
-            $('#editarH1').click(() => this.editarParrafo('#ph1','#tph1'));
 
-        });
-*/
     }
 
     editarParrafo(id,field){
