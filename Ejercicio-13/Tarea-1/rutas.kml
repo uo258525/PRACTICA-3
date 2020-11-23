@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<name>Rutas</name>
+		<Placemark>
+			<name>Inicio Ruta a Viena</name>
+			<LineString>
+				<coordinates>
+-6.033343,43.563465,0
+2.3488,48.8032,0
+13.4081,52.5186,0
+7.40737,46.9489,0
+16.3728,48.2092,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Inicio Ruta a Roma</name>
+			<LineString>
+				<coordinates>
+-9.135297,38.775732,0
+-3.70256,40.4165,0
+ -0.12574,51.50853,0
+12.4942,41.8905,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Inicio Ruta a Estambul</name>
+			<LineString>
+				<coordinates>
+-3.5933761,40.4927751,0
+14.42076,50.08804,0
+19.0408,47.4983,0
+28.94966,41.01384,0
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Document>
+</kml>

@@ -48,7 +48,7 @@ showErrors(error){
 }
 
 getMapa(){
-    var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
+    var apiKey = "&key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM";
     var url = "https://maps.googleapis.com/maps/api/staticmap?";
     var centro = "center=" + this.latitud + "," + this.longitud;
     var zoom ="&zoom=15";

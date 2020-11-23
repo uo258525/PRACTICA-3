@@ -1,4 +1,8 @@
 /*especificidad=1*/
+#mapa{
+    width:31.25em;
+}
+/*especificidad=1*/
 h1,main{
     text-align:center;
 }

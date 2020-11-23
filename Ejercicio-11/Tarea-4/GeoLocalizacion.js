@@ -1,3 +1,4 @@
+"use strict";
 class GeoLocalizacion{
 
     constructor(){
@@ -5,12 +6,25 @@ class GeoLocalizacion{
     }
 
 
-initMapa(){
-    mapaDinamico= new Object();
-    var oviedo = {lat: 43.3672702, lng: -5.8502461};
-    var mapaOviedo = new google.maps.Map(document.getElementById('mapa'),{zoom: 8,center:oviedo});
-    var marcador = new google.maps.Marker({position:oviedo,map:mapaOviedo});
+initMap(){
+
+
+    const oviedo = {
+        lat: 43.362583,
+        lng: -5.843081
+    };
+
+    const mapaOviedo = new google.maps.Map(document.getElementById('mapa'),
+        {
+            center: oviedo,
+            zoom:12
+        }
+    );
+    const marker = new google.maps.Marker({
+        position: oviedo,
+        map: mapaOviedo
+    });
+}
 }
 
-}
-initMapa.mapaDinamico=initMapa;
+var geo=new GeoLocalizacion();
