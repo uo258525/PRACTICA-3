@@ -27,7 +27,8 @@ h2 {
 }
 /*especificidad=10*/
 .thumbnailImg {
-    height: 200px;
+    height: 12.5em;
+    object-fit: contain;
 }
 /*especificidad=1*/
 a {
