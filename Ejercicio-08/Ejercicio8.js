@@ -6,7 +6,7 @@ class Ejercicio8{
  cargarData(ciudad){
     $.ajax({
         dataType: "json",
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad+ "&units=metric&lang=es&APPID=f499f85bbf4f894d24f3069097f23b78",
+        url: "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad+ "&units=metric&lang=es&APPID=f499f85bbf4f894d24f3069097f23b78",
         method: 'GET',
         success: (data) => {
             this.verData(data);            
