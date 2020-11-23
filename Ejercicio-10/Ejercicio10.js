@@ -35,7 +35,7 @@ class Ejercicio10{
         str+="<h3 class='newsHeader'>" +item.webTitle +"</h3>";//titulo
         str+="<p class='newsSubtitle'>" +item.sectionName +". "+ item.webPublicationDate +"</p>";//subtitle
 
-        str+="<div class='thumbnail'>"+"<img class='thumbnailImg' src='"+item.fields.thumbnail+"'/>" //imagen
+        str+="<div class='thumbnail'>"+"<img class='thumbnailImg' alt='imagen' src='"+item.fields.thumbnail+"'/>" //imagen
         str+= "</div>";
         str+="<div class='trailText'><p>"+ item.fields.trailText+ "(<a href='" +item.webUrl+ "'>Read more</a>)"
         str+="</p>";
