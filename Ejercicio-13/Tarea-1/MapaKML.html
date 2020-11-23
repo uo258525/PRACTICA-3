@@ -16,13 +16,14 @@
     <h2>Selecciona un archivo KML</h2>
     <section id="button">
             <label for="files"></label>
-            <input type="file" id="files" onchange="mapa.initMap()" single>
+            <input type="file" id="files" single>
     </section>
     
     <div id="mapa">
     </div>
 </main>
+<script src="geoxml3.js"></script>
 <script src="MapaKML.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM&callback=mapa.initMap"></script>
 </body>
 </html>

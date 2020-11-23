@@ -1,21 +1,32 @@
 "use strict";
 class MapaKML {
     constructor() {
+        $('#files').change(() => this.loadFile());
+    }
+
+    initMap() {
+        this.mapa = new google.maps.Map($('#mapa').get(0), {
+            center: {
+                lat: 0,
+                lng: 0
+            },
+            zoom: 12,
+        });
 
     }
-    initMap() {
-        $("#fichero").empty();
-        this.file = $("#files")[0].files[0];
-        if (file.name.includes('.kml')) {
-            const reader = new FileReader();
-            reader.onload = () => {
 
-                const map = new google.maps.Map(document.getElementById('mapa'), {
-                    zoom: 12,
-                });
-                
+    loadFile() {
+        $("#fichero").empty();
+        this.file = $("#files").get(0).files[0];
+        if (this.file.name.includes('.kml')) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                console.log(reader.result);
+                var myParser = new geoXML3.parser({map: this.mapa});
+                myParser.parseKmlString(reader.result);
             };
-            reader.readAsText(file);
+                
+            reader.readAsText(this.file);
 
         } else {
             alert("Solo se permiten archivos KML. Inténtalo de nuevo.");

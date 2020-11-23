@@ -1,6 +1,7 @@
 /*especificidad=1*/
 #mapa{
-    width:31.25em;
+    height: 500px;
+    width: 100%;
 }
 /*especificidad=1*/
 h1,main{
