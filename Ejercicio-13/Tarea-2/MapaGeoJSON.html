@@ -16,13 +16,13 @@
     <h2>Selecciona un archivo GeoJSON</h2>
     <section id="button">
             <label for="files"></label>
-            <input type="file" id="files" single>
+            <input type="file" id="files" onchange="mapa.init()" single>
     </section>
     
     <div id="mapa">
     </div>
 </main>
 <script src="MapaGeoJSON.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM&callback=mapa.init"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM"></script>
 </body>
 </html>

@@ -7,22 +7,22 @@ class MapaGeoJSON {
 
     init() {
         $("#fichero").empty();
-        this.file = $("#files").get(0).files[0];
-        if (this.file.name.includes('.GeoJSON')) {
+        var file = $("#files").get(0).files[0];
+        if (file.name.includes('.GeoJSON')) {
             const reader = new FileReader();
             reader.onloadend = () => {
                 const map = new google.maps.Map(document.getElementById('mapa'), {
-                    zoom: 12,
+                    zoom: 4,
                     center:{
-                        lat:0,
-                        lng: 0
+                        lat:43.36029,
+                        lng: -5.843081
                     }
                 });
                 const json = JSON.parse(reader.result);
                 map.data.addGeoJson(json);
             };
                 
-            reader.readAsText(this.file);
+            reader.readAsText(file);
 
         } else {
             alert("Solo se permiten archivos GeoJSON. Inténtalo de nuevo.");
