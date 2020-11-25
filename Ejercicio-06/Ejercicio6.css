@@ -20,8 +20,8 @@ form{
 h1{
     text-align:center;
 }
-/*especificidad=1*/
-h2{
+/*especificidad=100*/
+#intro{
     color:blue;
     text-align:center;
 }
