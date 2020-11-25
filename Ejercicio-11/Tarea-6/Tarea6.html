@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
     <meta content="width=device-width,user-scalable=yes" name="viewport">
     <title>Ejercicio 11-Tarea6</title>
-    <link rel="stylesheet" type="text/css" href="Tarea6.css">
-
+    <link rel="stylesheet" type="text/css" href="Tarea6.css">    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <header>
-    <h1>Tarea6</h1>
+    <h1>Crea tu propia ruta</h1>
 </header>
-
 <main>
-    
-    <section id="result">
-        <h2 id="resultHeader">Resultados</h2>
-
-    </section>
+    <section id="buttons">
+        <h2>Introduce tus coordenadas para añadir puntos en el mapa</h2>
+        <form>
+        
+            <input type="number" placeholder="Longitud" id="long">
+            <input type="number" placeholder="Latitud" id="lat">      
+        
+            <input type="button" value="Añadir punto" onclick="t6.crearMarcador()">
+        </form>
+        </section>
+    <div id="mapa">
+    </div>
    
 </main>
 
 <script src="Tarea6.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM&callback=t6.initMap"></script>
 
 </body>
 </html>

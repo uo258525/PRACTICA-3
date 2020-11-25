@@ -1,0 +1,13 @@
+/*especificidad=1*/
+#mapa{
+    height: 500px;
+    width: 100%;
+}
+/*especificidad=1*/
+h1,main{
+    text-align:center;
+}
+/*especificidad=1*/
+h2{
+    color:blue;
+}

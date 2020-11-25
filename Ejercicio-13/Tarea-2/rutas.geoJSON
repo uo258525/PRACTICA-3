@@ -1,0 +1,94 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -6.033343,
+                        43.563465
+                    ],
+                    [
+                        2.3488,
+                        48.8032
+                    ],
+                    [
+                        13.4081,
+                        52.5186
+                    ],
+                    [
+                        7.40737,
+                        46.9489
+                    ]
+                     [
+                        16.3728,
+                        48.2092
+                    ]
+                ]
+            },
+            "properties": {
+                "styleUrl": "#redLineGreenPoly",
+                "styleHash": "7daef64f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -9.135297,
+                        38.775732
+                    ],
+                    [
+                        -3.70256,
+                        40.4165
+                    ],
+                    [
+                        -0.12574,
+                        51.50853
+                    ],
+                    [
+                        12.4942,
+                        41.8905
+                    ]
+                ]
+            },
+            "properties": {
+                "styleUrl": "#redLineGreenPoly",
+                "styleHash": "7daef64f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -3.5933761,
+                        40.4927751
+                    ],
+                    [
+                        14.42076,
+                        50.08804
+                    ],
+                    [
+                        19.0408,
+                        47.4983
+                    ],
+                    [
+                        28.94966,
+                        41.01384
+                    ]
+                ]
+            },
+            "properties": {
+                "styleUrl": "#redLineGreenPoly",
+                "styleHash": "7daef64f"
+            }
+        },
+        
+    ]
+}

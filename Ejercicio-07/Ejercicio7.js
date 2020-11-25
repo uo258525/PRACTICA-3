@@ -39,19 +39,7 @@ class Ejercicio7{
         document.getElementById("datos").innerHTML = file;
     }
 
-/*
-    sumarFilasYColumnas() {
-        var filas = $('tr');
-        for (let i = 0; i < filas.length; i++) {
-            var columnas = $('td', filas.get(i));
-            for (let j = 0; j < columnas.length; j++) {
-                var celda = columnas.get(j);
-                var valor = parseInt(celda.innerHTML);
 
-            }
-        }
-    }
-    */
 
     sumar(){
         var suma=0;

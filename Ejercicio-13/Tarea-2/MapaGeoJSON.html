@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
+    <meta content="width=device-width,user-scalable=yes" name="viewport">
+    <title>Ejercicio 13-Tarea2</title>
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css">    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="body">
+<header id="header">
+    <h1>Mapa dinámico a partir de un archivo GeoJSON</h1>
+</header>
+<main>
+    <h2>Selecciona un archivo GeoJSON</h2>
+    <section id="button">
+            <label for="files"></label>
+            <input type="file" id="files" single>
+    </section>
+    
+    <div id="mapa">
+    </div>
+</main>
+<script src="MapaGeoJSON.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM&callback=mapa.init"></script>
+</body>
+</html>

@@ -1,11 +1,11 @@
-/*especificidad=100*/
-#calcDietetica {
-    background-color: hotpink;
+/*especificidad=1*/
+form{
+    text-align: center;
 }
 /*especificidad=100*/
 #left, #right {
     width: 45%;
-    background-color: chartreuse;
+    background-color: rgb(144, 218, 208);
     display: inline-block;
 }
 /*especificidad=100*/
