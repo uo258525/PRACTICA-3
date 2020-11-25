@@ -15,7 +15,7 @@
       <h1>H1</h1>
       <p id="ph1">Párrafo modificable de h1</p>
       
-      <p>Introduzca texto para párrafo de h1:<input type="text" id="tph1"><button class="button" id="editarH1" onclick="ej7.editarParrafo('#ph1','#tph1')">Editar</button></p>
+      <p>Introduzca texto para párrafo de h1:<input type="text" id="tph1" title="parrafo"><button class="button" id="editarH1" onclick="ej7.editarParrafo('#ph1','#tph1')">Editar</button></p>
         
     
     </section>
@@ -34,7 +34,6 @@
                 <th>Columna 1</th>
                 <th>Columna 2</th>
                 <th>Columna 3</th>
-                <th></th>
               </tr>
               <tr id="f1">
                 <td>1</td>
@@ -69,21 +68,22 @@
     </section>
     <section>
         <h4>Recorrer documento </h4>
-        <article id="datos">
-        </article>
+        <div id="datos">
+        </div>
         <button class="button" id="recorrer" onclick="ej7.recorrer()">Recorrer</button>
       
         
     </section>
    
 <script src="Ejercicio7.js"></script>
+
+<footer id="footer">
+  <button class="button" id="addFooter" onclick="ej7.addFooter()">Añadir footer</button> 
+</footer>
 </body>
 
-    <div>
-      <footer id="footer">
-
-      </footer>
-    <button class="button" id="addFooter" onclick="ej7.addFooter()">Añadir footer</button> 
-    </div>
+    
+    
+   
 
 </html>
