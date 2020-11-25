@@ -6,3 +6,8 @@ h1,main{
 h2{
     color:blue;
 }
+#content{
+    text-align:center;
+    color: black;
+    font-size: 1.2em;
+}

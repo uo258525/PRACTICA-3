@@ -21,7 +21,7 @@ class Ejercicio12{
 
         let content = this.convertirXML(result);
 
-        $("#fichero").html("<h2>Contenido del fichero</h2>");
+        $("#fichero").html("<h2 id='content'>Contenido del fichero</h2>");
         $("#fichero").append("<p>" + content + "</p>")
     }
 
