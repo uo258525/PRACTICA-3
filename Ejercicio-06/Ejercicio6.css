@@ -20,3 +20,7 @@ form{
 h1{
     text-align:center;
 }
+/*especificidad=100*/
+#textoResultados{
+    text-align: center;
+}

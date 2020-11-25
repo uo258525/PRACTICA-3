@@ -101,7 +101,6 @@ class Ejericio6{
 
 
         // Mostrar en pantalla
-        document.getElementById("tituloResultados").innerHTML = "Resultados";
         document.getElementById("textoResultados").innerHTML = str;
     }
 
