@@ -34,34 +34,32 @@
                 <th>Columna 1</th>
                 <th>Columna 2</th>
                 <th>Columna 3</th>
+                <th></th>
               </tr>
               <tr id="f1">
                 <td>1</td>
                 <td>1</td>
-                <td>1</td>
-                <td>
-                    <button class="fila" id="fila1" onclick="ej7.eliminarElemento('#f1')">Eliminar</button>
-                </td>
+                <td>1 <button class="fila" id="fila1" onclick="ej7.eliminarElemento('#f1')">Eliminar</button></td>
+                
               </tr>
               <tr id="f2">
                 <td>2</td>
                 <td>2</td>
-                <td>2</td>
-                <td>
-                    <button class="fila" id="fila2" onclick="ej7.eliminarElemento('#f2')">Eliminar</button>
-                </td>
+                <td>2 <button class="fila" id="fila2" onclick="ej7.eliminarElemento('#f2')">Eliminar</button></td>
+               
+                
               </tr>
               <tr id="f3">
                 <td>3</td>
                 <td>3</td>
-                <td>3</td>
-                <td>
-                    <button class="fila" id="fila3" onclick="ej7.eliminarElemento('#f3')">Eliminar</button>
-                </td>
+                <td>3  <button class="fila" id="fila3" onclick="ej7.eliminarElemento('#f3')">Eliminar</button></td>
+                
+                   
+                
               </tr>
         </table>
         <button class="button" id="sumar" onclick="ej7.sumar()">Sumar filas y columnas</button>
-        <input type="text" id="sum">
+        <input type="text" id="sum" title="suma">
 
         <p>Modificaciones tabla
         <button class="button" id="mostrarTabla" onclick="ej7.mostrarElemento('table')">Mostrar</button>
@@ -80,12 +78,12 @@
    
 <script src="Ejercicio7.js"></script>
 </body>
-<footer>
-    <section>
+
+    <div>
       <footer id="footer">
 
       </footer>
     <button class="button" id="addFooter" onclick="ej7.addFooter()">Añadir footer</button> 
-</section>
-</footer>
+    </div>
+
 </html>
