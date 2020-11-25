@@ -17,14 +17,10 @@ form{
     float: right;
 }
 /*especificidad=1*/
-h1{
+h1,h2{
     text-align:center;
 }
-/*especificidad=100*/
-#intro{
-    color:blue;
-    text-align:center;
-}
+
 /*especificidad=100*/
 #textoResultados{
     text-align: center;
