@@ -30,7 +30,7 @@ class Tarea6 {
             map: this.map
         });
         this.map.setCenter(center);
-        this.marcadores.push(marker);
+        this.marcadores.push(center);
         if(this.marcadores.length>1){
             this.crearRuta();
         }
@@ -41,13 +41,14 @@ class Tarea6 {
     crearRuta() {
         
         {
-            var ruta = new google.maps.Polyline({
+            if (this.ruta) this.ruta.setMap(null);
+            this.ruta = new google.maps.Polyline({
                 path: this.marcadores,
                 strokeColor: "#FF0000",
                 strokeOpacity: 1.0,
                 strokeWeight: 2
             });
-        ruta.setMap(this.map);
+        this.ruta.setMap(this.map);
         }
 
     }
