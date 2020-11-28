@@ -11,8 +11,9 @@ h1 /*especifidad= 1*/
     text-align: center;     
 }
 /*especificidad=1*/
-h2{
+p{
     text-align:center;
+    font-size: 1.5em;
 }
 /*especificidad=100*/
 
