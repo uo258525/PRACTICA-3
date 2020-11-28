@@ -10,6 +10,10 @@ h1 /*especifidad= 1*/
     padding: 1.5em;
     text-align: center;     
 }
+/*especificidad=1*/
+h2{
+    text-align:center;
+}
 /*especificidad=100*/
 
 #content{
