@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="Elena Díaz Gutiérrez -UO258525" name="author">
+    <meta content="width=device-width,user-scalable=yes" name="viewport">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Visualizador de videos a partir de un archivo</h1>
+    </header>
+
+    <main>
+        <div id="button">
+            <p>A continuación seleccione o arrastre el video que desee cargar</p>
+            <input type="file" accept="video/*" id="files" title="files" onchange="ej14.cargarVideo()">
+        </div>
+        <div id="arrastrar" ondrop="ej14.drop(event)" ondragover="ej14.allowDrop(event)">
+           <p id="arrastrarResultado">Arrastrar video</p>
+        </div>
+
+        <section>
+            <h2>Reproducción de video</h2>
+            <p>Pulse 'P' para activar la pantalla completa</p>
+            <video autoplay controls muted id="myvideo" class="myvideo">
+            </video>
+        </section>
+
+    </main>
+    <script src="Ejercicio14.js"></script>
+</body>
+
+</html>
