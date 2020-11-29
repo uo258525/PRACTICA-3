@@ -1,15 +1,16 @@
-/*especifidad=1 */
+/*especificidad=1 */
 body {
     background-color: rgb(233, 250, 248);
+
 }
 
-video /*especifidad=1 */
+video /*especificidad=1 */
 {
     height:37.5em;
     max-width: 62.5em;
     width: 100%;
 }
- /*especifidad=100 */
+ /*especificidad=100 */
 #arrastrar {
     border-style: dashed;
     border-width: .2em;
@@ -21,21 +22,21 @@ video /*especifidad=1 */
     background-color: rgb(209, 209, 209);
     padding: 1.2em;
 }
- /*especifidad=100 */
+ /*especificidad=100 */
 #arrastrarResultado {
     color: rgb(80, 80, 80);
     font-size: 1.5em;
 }
- /*especifidad=1 */
+ /*especificidad=1 */
 main{
     text-align: center;
 }
- /*especifidad=1 */
+ /*especificidad=1 */
 p{
 
     font-size:1.2em;
 }
-h1 /*especifidad= 1*/ 
+h1 /*especificidad= 1*/ 
 {
     background-color:#8f8df5; 
     color:black;
