@@ -17,11 +17,7 @@ video /*especificidad=1 */
     background-color: rgb(255, 255, 255);
     padding: 1.2em;
 }
- /*especificidad=100 */
-#arrastrarResultado {
-    color: rgb(0, 0, 0);
-    font-size: 1.55em;
-}
+
  /*especificidad=1 */
 main{
     text-align: center;
