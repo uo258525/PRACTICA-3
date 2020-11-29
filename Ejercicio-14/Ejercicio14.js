@@ -5,6 +5,7 @@ class Ejercicio14 {
         } else {
             $("#fichero").html("<p>El navegador no soporta el API File y puede no funcionar correctamente</p>");
         }
+        document.getElementById("arrastrar").innerHTML="<p>Arrastrar video</p>";
     }
 
     toggleFullscreen() {

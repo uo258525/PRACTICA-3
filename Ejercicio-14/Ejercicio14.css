@@ -17,16 +17,16 @@ video /*especificidad=1 */
     background-color: rgb(255, 255, 255);
     padding: 1.2em;
 }
+/*especificidad=1*/
+p{
+    font-size: 1.55em;
+}
 
  /*especificidad=1 */
 main{
     text-align: center;
 }
- /*especificidad=1 */
-p{
 
-    font-size:1.6em;
-}
 h1 /*especificidad= 1*/ 
 {
     background-color:#8f8df5; 
