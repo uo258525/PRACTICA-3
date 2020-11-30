@@ -8,7 +8,7 @@ class MapaGeoJSON {
     init() {
         $("#fichero").empty();
         var file = $("#files").get(0).files[0];
-        if (file.name.includes('.geojson')) {
+        if (file.name.includes('.GeoJSON')) {
             const reader = new FileReader();
             reader.onloadend = () => {
                 const map = new google.maps.Map(document.getElementById('mapa'), {
