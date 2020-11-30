@@ -12,11 +12,7 @@ class MapaKML {
             },
             zoom: 12,
         });
-/*
-        const kmlGoogleLayer = new google.maps.KmlLayer({
-            url: "https://googlearchive.github.io/js-v2-samples/ggeoxml/cta.kml",
-            map: this.mapa
-        });*/
+
     }
 
     loadFile() {
@@ -24,12 +20,6 @@ class MapaKML {
         this.file = $("#files").get(0).files[0];
         if (this.file.name.includes('.kml')) {
 
-            /*
-            const kmlLayer = new google.maps.KmlLayer({
-                url: window.URL.createObjectURL(this.file),
-                map: this.mapa
-            });
-            */
 
             const reader = new FileReader();
             reader.onloadend = () => {
