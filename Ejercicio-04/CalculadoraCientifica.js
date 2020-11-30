@@ -404,10 +404,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
         }
     }
 
-    coma() {
-        this.pantalla = ",";
-        this.updatePantalla();
-    }
+    
 
     ms() {
         if (this.regex.test(this.pantalla)) {
