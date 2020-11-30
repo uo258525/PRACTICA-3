@@ -1,19 +1,10 @@
 "use strict";
 class MapaKML {
     constructor() {
-        $('#files').change(() => this.loadFile());
+        
     }
 
-    initMap() {
-        this.mapa = new google.maps.Map($('#mapa').get(0), {
-            center: {
-                lat: 0,
-                lng: 0
-            },
-            zoom: 12,
-        });
-
-    }
+   
 
     loadFile() {
         $("#fichero").empty();
@@ -23,6 +14,13 @@ class MapaKML {
 
             const reader = new FileReader();
             reader.onloadend = () => {
+                this.mapa = new google.maps.Map($('#mapa').get(0), {
+                    center: {
+                        lat: 0,
+                        lng: 0
+                    },
+                    zoom: 12,
+                });
                 var latlngbounds = new google.maps.LatLngBounds();
                 $('coordinates', reader.result)
                     .each((i,ele) => {

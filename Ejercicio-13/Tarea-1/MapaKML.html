@@ -16,7 +16,7 @@
     
     <section id="button">
         <h2>Selecciona un archivo KML</h2>
-            <input type="file" id="files" title="input">
+            <input type="file" id="files" onchange="mapa.loadFile()" title="input">
     </section>
     
     <div id="mapa">
@@ -26,6 +26,6 @@
     <p>Ejercicio 11, tarea 1 desarrollado en prácticas.</p>
 </footer>
 <script src="MapaKML.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM&callback=mapa.initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9pn6ew4Nazx8vzXWEjGsMN_zO2pTUmoM"></script>
 </body>
 </html>
