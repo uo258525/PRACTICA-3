@@ -1,3 +1,4 @@
+"use strict";
 class Ejercicio14 {
     constructor() {
         if (window.File && window.FileReader && window.FileList && window.Blob) {

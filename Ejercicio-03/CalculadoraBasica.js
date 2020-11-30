@@ -1,5 +1,4 @@
-//CalculadoraBasica.js
-/*Version 1.0. 04/11/2020.Elena Díaz Gutiérrez. Universidad de Oviedo*/
+"use strict";
 class CalculadoraBasica{
 
     constructor(){
