@@ -17,6 +17,9 @@ class Tarea6 {
                 zoom: 12
             }
         );
+        this.map.addListener('click', function(e) {
+            t6.crearMarcadorClick(e.latLng)
+         });
 
 
     }
@@ -37,6 +40,21 @@ class Tarea6 {
     
 
     }
+
+    crearMarcadorClick(coordenada){
+        let pos = {
+            lat: coordenada.lat(),
+            lng:coordenada.lng()
+        }
+        const marker = new google.maps.Marker({
+            position: pos,
+            map: this.map
+        });
+        this.marcadores.push(pos);
+        if(this.marcadores.length>1){
+            this.crearRuta();
+        }
+}
 
     crearRuta() {
         
