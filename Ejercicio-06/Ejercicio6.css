@@ -25,7 +25,7 @@ h1,h2{
 #textoResultados{
     text-align: center;
 }
-
+/*especificidad=1*/
 button{
     margin: 0.75em;
     padding-right: 1em;

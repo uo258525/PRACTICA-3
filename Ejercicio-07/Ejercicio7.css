@@ -47,3 +47,7 @@ section{/*especificidad=1*/
 #recorrer{
     text-align: center;
 }
+/*especificidad=1*/
+footer{
+    text-align:center;
+}
