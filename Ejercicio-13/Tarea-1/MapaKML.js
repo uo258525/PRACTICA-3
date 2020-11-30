@@ -34,7 +34,6 @@ class MapaKML {
                                 lat: parseFloat(c.split(',')[1]),
                             };
                             if (isNaN(latlng.lat) || isNaN(latlng.lng) )return;
-                            console.log(latlng);
                             puntos.push(latlng);
                             latlngbounds.extend(latlng);
                         });
