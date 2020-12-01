@@ -16,12 +16,12 @@
 <main>
     <section id="buttons">
         <h2>Introduce tus coordenadas o haz click en el mapa para añadir puntos</h2>
-        <form id="form" class="form" onsubmit="t6.crearMarcador()"> 
+        <form id="form" class="form" onsubmit="t6.crearMarcador();return false;"> 
         
             
             <input type="number" placeholder="Latitud" id="lat" title="latitude">   
             <input type="number" placeholder="Longitud" id="long" title="longitude">          
-            <input type="button" value="Añadir punto" >
+            <input type="submit" value="Añadir punto" >
         </form>
         </section>
     <div id="mapa">
