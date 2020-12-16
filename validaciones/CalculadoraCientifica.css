@@ -6,6 +6,10 @@ body {
 h1{
     text-align: center;
 }
+/*especificidad=1*/
+p{
+    text-align: center;
+}
 /*especificidad=10*/
 .calculator {
     font-size: 24px;
