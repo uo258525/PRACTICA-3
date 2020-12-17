@@ -13,4 +13,14 @@ body {
     background-color: #abdcf3;
     color: #242424;
 }
+/*Especificidad=1*/
+a,p{
+    display: inline;
+    padding: 15px;
+    font-size: 1.2em;
+}
+/*Especificidad=1*/
+th{
+    font-size: 1.5em;
+}
 
