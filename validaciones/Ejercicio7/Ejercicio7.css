@@ -1,0 +1,16 @@
+/*Especificidad=10*/
+.content {
+    margin: 3%;
+    background-color: white;
+    box-shadow: 0px 0px 12px #585858;
+    border-radius: 4px;
+    padding: 30px;
+    align-items: center;
+}
+/*Especificidad=1*/
+body {
+    margin: 0%;
+    background-color: #abdcf3;
+    color: #242424;
+}
+
