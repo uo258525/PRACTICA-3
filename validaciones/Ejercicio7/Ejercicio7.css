@@ -20,7 +20,8 @@ a,p{
     font-size: 1.2em;
 }
 /*Especificidad=1*/
-th{
-    font-size: 1.5em;
+th,td{
+    font-size: 1.2em;
+    padding: 8px;
 }
 
