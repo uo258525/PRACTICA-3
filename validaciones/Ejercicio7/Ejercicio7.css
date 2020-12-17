@@ -17,11 +17,17 @@ body {
 a,p{
     display: inline;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 /*Especificidad=1*/
 th,td{
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding: 8px;
 }
+/*Especificidad=1*/
+.borrar,.actores{
+    font-size: 1em;
+}
+
+
 
